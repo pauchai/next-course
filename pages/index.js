@@ -1,9 +1,15 @@
+import Link from "next/link";
+
 const index = () => {
   return (
     <div>
         <div>
-            <a href="/">Main</a>
-            <a href="/users">Users</a>
+            <Link href="/">
+                <a >Main</a>
+            </Link>
+            <Link href="/users">
+                <a >Users</a>
+            </Link>
         </div>
         <h1>Main page</h1>
     </div>
