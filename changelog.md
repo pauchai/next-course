@@ -24,3 +24,5 @@ Including head meta for SEO
 Using layout MainContainer
 
 Custom error page
+
+Prepare for deploy: link vercel.com account with github 
