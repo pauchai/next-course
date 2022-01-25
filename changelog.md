@@ -20,3 +20,5 @@ See pagesource - notice that users renders correctly
 Fetching individual user data - getServerSideProps
 
 Including head meta for SEO
+
+Using layout MainContainer
