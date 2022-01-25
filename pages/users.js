@@ -24,7 +24,7 @@ export default Users;
 
 export async function getStaticProps(context) {
     const response = await fetch(`http://localhost:5000/users`)
-        const users = await response.json()
+    const users = await response.json()
     return {
         props: {users}, // will be passed to the page component as props
     }
