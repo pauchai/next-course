@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const Users = () => {
@@ -10,7 +11,11 @@ const Users = () => {
       <h1>Users list</h1>
       <ul>
           {users.map(user =>
-            <li>{user.name}</li>
+            <li>
+                <Link href={`/users/${user.id}`}>               
+                        <a>{user.name}</a>            
+                </Link>
+            </li>
         )}
       </ul>
   </div>
