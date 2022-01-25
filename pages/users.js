@@ -1,17 +1,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const Users = () => {
-    const [users, setUsers] = useState([
-        {id: 1, name: 'user1'},
-        {id: 2, name: 'user2'},
-    ])
-
-    useEffect(async () => {
-        const response = await fetch(`http://localhost:5000/users`)
-        const data = await response.json()
-        setUsers(data)
-    }, [])
+const Users = ({users}) => {
+ 
   return (
   <div>
       <h1>Users list</h1>
@@ -29,3 +20,12 @@ const Users = () => {
 };
 
 export default Users;
+
+
+export async function getStaticProps(context) {
+    const response = await fetch(`http://localhost:5000/users`)
+        const users = await response.json()
+    return {
+        props: {users}, // will be passed to the page component as props
+    }
+}

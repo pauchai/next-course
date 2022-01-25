@@ -12,4 +12,7 @@ Component individual css
 npm i scss
 
 json-server --watch db.json --port 5000
-Fetching data from server
+Fetching data from server commonly in react
+
+Fetching data from server with getStaticProps. 
+See pagesource - notice that users renders correctly
