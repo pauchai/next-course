@@ -1,6 +1,8 @@
 import { useRouter } from "next/router"
 import MainContainer from "../../components/MainContainer"
 import styles from '../../styles/User.module.scss'
+
+
 export default function User({user}) {
     const {query} = useRouter()     
     return (
@@ -14,7 +16,7 @@ export default function User({user}) {
 export async function getServerSideProps({params}) {
     //console.log(params)
     // {id: 1}
-    const response = await fetch(`http://localhost:5000/users/${params.id}`)
+    const response = await fetch(`${process.env.BACKAND_BASE_URL}/users/${params.id}`)
     const user = await response.json()
     return {
         props: {user}, // will be passed to the page component as props
