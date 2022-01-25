@@ -18,3 +18,5 @@ Fetching data from server with getStaticProps.
 See pagesource - notice that users renders correctly
 
 Fetching individual user data - getServerSideProps
+
+Including head meta for SEO

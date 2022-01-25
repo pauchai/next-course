@@ -3,23 +3,30 @@ import A from "../components/A";
 
 const index = () => {
   return (
-    <div>
-        <div className="navbar">
-            <A href="/" text="Main"></A>
-            <A href="/users" text="Users"></A>
-            
+      <>
+        <head>
+            <meta  keywords="nextjs"></meta>
+            <title>Main page</title>
+        </head>
+        <div>
+            <div className="navbar">
+                <A href="/" text="Main"></A>
+                <A href="/users" text="Users"></A>
+                
+            </div>
+            <h1>Main page</h1>
+            <style jsx>
+                {`
+                    .navbar {
+                        background: orange;
+                        padding: 15px;
+                    }
+                
+                `}
+            </style>
         </div>
-        <h1>Main page</h1>
-        <style jsx>
-            {`
-                .navbar {
-                    background: orange;
-                    padding: 15px;
-                }
-               
-            `}
-        </style>
-    </div>
+      </>
+  
   )
 };
 
