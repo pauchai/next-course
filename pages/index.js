@@ -1,31 +1,14 @@
 import Link from "next/link";
 import A from "../components/A";
+import MainContainer from "../components/MainContainer";
 
 const index = () => {
   return (
-      <>
-        <head>
-            <meta  keywords="nextjs"></meta>
-            <title>Main page</title>
-        </head>
-        <div>
-            <div className="navbar">
-                <A href="/" text="Main"></A>
-                <A href="/users" text="Users"></A>
-                
-            </div>
+        <MainContainer>
+            
             <h1>Main page</h1>
-            <style jsx>
-                {`
-                    .navbar {
-                        background: orange;
-                        padding: 15px;
-                    }
-                
-                `}
-            </style>
-        </div>
-      </>
+            
+        </MainContainer>
   
   )
 };
