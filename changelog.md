@@ -8,3 +8,5 @@ Built-in CSS Support
 http://nextjs.org/docs/basic-features/built-in-css-suppurt
 
 Component individual css
+
+npm i scss
