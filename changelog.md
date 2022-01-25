@@ -16,3 +16,5 @@ Fetching data from server commonly in react
 
 Fetching data from server with getStaticProps. 
 See pagesource - notice that users renders correctly
+
+Fetching individual user data - getServerSideProps
