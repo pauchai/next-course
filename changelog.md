@@ -3,3 +3,6 @@ npm init -y
 npm i next react react-dom
 
 npm run dev
+
+Built-in CSS Support
+http://nextjs.org/docs/basic-features/built-in-css-suppurt
