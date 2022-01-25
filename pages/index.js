@@ -4,7 +4,7 @@ import MainContainer from "../components/MainContainer";
 
 const index = () => {
   return (
-        <MainContainer>
+        <MainContainer keywords={"main page"}>
             
             <h1>Main page</h1>
             

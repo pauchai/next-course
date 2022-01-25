@@ -4,7 +4,7 @@ import styles from '../../styles/User.module.scss'
 export default function User({user}) {
     const {query} = useRouter()     
     return (
-        <MainContainer className={styles.user} >
+        <MainContainer className={styles.user} keywords={user.name} >
             <h1>User with id {query.id}</h1>
             <div>User name - {user.name}</div>
         </MainContainer>
