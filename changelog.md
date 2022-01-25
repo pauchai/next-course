@@ -22,3 +22,5 @@ Fetching individual user data - getServerSideProps
 Including head meta for SEO
 
 Using layout MainContainer
+
+Custom error page
